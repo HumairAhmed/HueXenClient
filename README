@@ -21,7 +21,15 @@ Program Description:
 Python client that connects to a Citrix XenServer Pool or Host 
 and provides some basic and advanced management capabilities.
 
-This application can montor multiple VMs simultaneously via
+This application provides basic management utilities to manage VMs
+on a XenServer Pool or XenServer Host. Some of these management 
+utilities include, shutting down the VM, starting the VM, 
+restarting the VM, suspending the VM, resuming the VM, and
+taking a snapshot of the VM. Other functionality such as filtering
+powered-on VMs by host and changing the master host password are
+also provided.
+
+The application can also montor multiple VMs simultaneously via
 multiple threads. The network monitoring functionality uses 
 the applications own ICMP ping implementation to ping a selected
 VM twice around every five seconds. If two consecutive pings are
@@ -41,8 +49,9 @@ provide required fucntioality for this app.
 
 Dependencies:
 
-To run this program, you will also need to download and link to the 
-XenAPI library and the Pmw megawidgets library.
+Python 2.7.2 was used to write this program. To run this program, 
+you will also need to download and link to the XenAPI 6.0 library 
+and the Python Pmw megawidgets library.
 
 The program has to be run as root as it creates its own ICMP packets
 and sends them out by opening sockets.
