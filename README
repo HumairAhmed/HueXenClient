@@ -17,6 +17,7 @@ is kept within the code.
 
 
 Program Description:
+
 Python client that connects to a Citrix XenServer Pool or Host 
 and provides some basic and advanced management capabilities.
 
@@ -29,7 +30,8 @@ monitoring is stopped. The network monitoring of the VM can also
 be manually stopped at any time.
 
 
-Open Source Code used:     
+Open Source Code used:   
+  
 The ping.py file was used and edited from the open source python 
 ping implementaion from jedie / python-ping  which was forked from 
 samuel/python-ping. You can find the original code on GitHub. This 
@@ -38,6 +40,7 @@ provide required fucntioality for this app.
 
 
 Dependencies:
+
 To run this program, you will also need to download and link to the 
 XenAPI library and the Pmw megawidgets library.
 
