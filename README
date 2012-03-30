@@ -1,0 +1,45 @@
+Program:  HueXenClient
+Version:  1.0
+Date:     03/28/2012
+Website:  http://www.HumairAhmed.com
+Lead Developer:   Humair Ahmed 
+
+
+License:
+
+Open source software being distributed under GPL license. For more 
+information see here:
+
+http://www.gnu.org/copyleft/gpl.html. 
+ 
+Can edit and redistribute code as long as above reference of authorship 
+is kept within the code.
+
+
+Program Description:
+Python client that connects to a Citrix XenServer Pool or Host 
+and provides some basic and advanced management capabilities.
+
+This application can montor multiple VMs simultaneously via
+multiple threads. The network monitoring functionality uses 
+the applications own ICMP ping implementation to ping a selected
+VM twice around every five seconds. If two consecutive pings are
+missed, a snapshot of the VM is automatically taken and the
+monitoring is stopped. The network monitoring of the VM can also
+be manually stopped at any time.
+
+
+Open Source Code used:     
+The ping.py file was used and edited from the open source python 
+ping implementaion from jedie / python-ping  which was forked from 
+samuel/python-ping. You can find the original code on GitHub. This 
+code has been modified to contain everything in the class Ping and 
+provide required fucntioality for this app.
+
+
+Dependencies:
+To run this program, you will also need to download and link to the 
+XenAPI library and the Pmw megawidgets library.
+
+The program has to be run as root as it creates its own ICMP packets
+and sends them out by opening sockets.
